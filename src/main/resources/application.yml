@@ -1,0 +1,22 @@
+server:
+  port: 80
+
+
+spring:
+  application:
+    name: YoungMusic
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST}:3306/${DATABASE_NAME}?characterEncoding=UTF8&useSSl=false
+    username: ${MYSQL_USER_NAME}
+    password: ${MYSQL_PASS_WORD}
+
+  profiles:
+    active: dev
+
+MYSQL_HOST: 49.232.161.139
+DATABASE_NAME: young_music
+MYSQL_USER_NAME: root
+MYSQL_PASS_WORD: 1207
+
